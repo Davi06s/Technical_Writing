@@ -1,0 +1,127 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Courier New', monospace;
+    background: #000;
+    color: #0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    overflow: hidden;
+}
+
+#game-container {
+    position: relative;
+    width: 100%;
+    max-width: 1280px;
+    height: 720px;
+    background: #000;
+    border: 2px solid #0f0;
+}
+
+.screen {
+    display: none;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
+.screen.active {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#menu-screen h1,
+#gameover-screen h1,
+#victory-screen h1 {
+    font-size: 4rem;
+    text-shadow: 0 0 10px #0f0;
+    margin-bottom: 2rem;
+}
+
+.subtitle {
+    font-size: 1.5rem;
+    animation: blink 1s infinite;
+    margin-top: 1rem;
+}
+
+@keyframes blink {
+    0%, 50% { opacity: 1; }
+    51%, 100% { opacity: 0; }
+}
+
+.controls-info {
+    margin-top: 3rem;
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+.controls-info p {
+    margin: 0.5rem 0;
+}
+
+#game-screen {
+    display: block;
+}
+
+#game-screen.active {
+    display: block;
+}
+
+#gameCanvas {
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: #000;
+}
+
+#hud {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    right: 10px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.2rem;
+    color: #0f0;
+    text-shadow: 0 0 5px #0f0;
+    pointer-events: none;
+}
+
+.hud-item {
+    background: rgba(0, 0, 0, 0.7);
+    padding: 5px 10px;
+    border: 1px solid #0f0;
+}
+
+.charge-bar-container {
+    display: inline-block;
+    width: 200px;
+    height: 20px;
+    border: 1px solid #0f0;
+    background: #000;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+.charge-bar {
+    width: 0%;
+    height: 100%;
+    background: linear-gradient(90deg, #0f0, #0ff);
+    transition: width 0.1s;
+}
+
+#gameover-screen p,
+#victory-screen p {
+    font-size: 1.8rem;
+    margin: 1rem 0;
+}

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Arrowhead - R-Type Tribute</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="game-container">
+        <div id="menu-screen" class="screen active">
+            <h1>PROJECT ARROWHEAD</h1>
+            <p class="subtitle">Press SPACE to Start</p>
+            <div class="controls-info">
+                <p><strong>Controls:</strong></p>
+                <p>Arrow Keys / WASD - Move</p>
+                <p>SPACE - Fire / Charge Wave Cannon</p>
+                <p>X - Attach/Detach Force</p>
+            </div>
+        </div>
+        
+        <div id="game-screen" class="screen">
+            <canvas id="gameCanvas"></canvas>
+            <div id="hud">
+                <div class="hud-item">Score: <span id="score">0</span></div>
+                <div class="hud-item">Lives: <span id="lives">3</span></div>
+                <div class="hud-item">
+                    <div class="charge-bar-container">
+                        <div id="chargeBar" class="charge-bar"></div>
+                    </div>
+                    <span id="chargeLabel">Wave Cannon</span>
+                </div>
+            </div>
+        </div>
+        
+        <div id="gameover-screen" class="screen">
+            <h1>GAME OVER</h1>
+            <p>Final Score: <span id="finalScore">0</span></p>
+            <p class="subtitle">Press SPACE to Restart</p>
+        </div>
+        
+        <div id="victory-screen" class="screen">
+            <h1>VICTORY!</h1>
+            <p>Final Score: <span id="victoryScore">0</span></p>
+            <p class="subtitle">Press SPACE to Play Again</p>
+        </div>
+    </div>
+    
+    <script src="js/utils.js"></script>
+    <script src="js/entities/projectile.js"></script>
+    <script src="js/entities/force.js"></script>
+    <script src="js/entities/player.js"></script>
+    <script src="js/entities/enemy.js"></script>
+    <script src="js/entities/boss.js"></script>
+    <script src="js/managers/enemySpawner.js"></script>
+    <script src="js/managers/collisionManager.js"></script>
+    <script src="js/game.js"></script>
+</body>
+</html>
