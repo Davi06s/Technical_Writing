@@ -8,7 +8,7 @@
 
 
 
-![Gameplay animation of Project Arrowhead](docs/ezgif-1b716f82cd536e.gif)
+![Gameplay animation of Project Arrowhead](docs/preview.gif)
 
 
 
