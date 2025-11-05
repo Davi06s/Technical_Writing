@@ -1,25 +1,20 @@
 <div align="center">
-
-```
- _____           _        _   _                 _
-|  _  |         | |      | | | |               | |
-| | | |_ __   __| | ___  | |_| |__   __ _ _ __ | | __
-| | | | '_ \ / _` |/ _ \ | __| '_ \ / _` | '_ \| |/ /
-\ \_/ / |_) | (_| |  __/ | |_| | | | (_| | | | |   <
- \___/| .__/ \__,_|\___|  \__|_| |_|\__,_|_| |_|_|\_\
-      | |
-      |_|
-```
-
+ 
 ## Project Arrowhead
 
 ### Un tributo moderno, basato sul web, al leggendario sparatutto arcade *R-Type*.
 
 **Licenza:** MIT | **Build:** Passing | **Stato:** In Sviluppo Attivo
 
-</div>
+
+
+![Gameplay animation of Project Arrowhead](docs/ezgif-1b716f82cd536e.gif)
+
+
 
 ---
+</div>
+
 
 ## 👾 Il Progetto
 
